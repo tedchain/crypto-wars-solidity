@@ -1,0 +1,21 @@
+<e11-loading *ngIf="loading"></e11-loading>
+
+<div class="app-version">
+  v{{appVersion}}
+</div>
+<e11-mobile-screen></e11-mobile-screen>
+
+<e11-errors class="scroll-y" *ngIf="!loading && !!error" [error]="error"></e11-errors>
+
+<ng-template [ngIf]="!error && !loading">
+  <e11-navbar *ngIf="navbarEnabled"
+              [balance]="e11Balance"
+              [activeSection]="section"
+              [childNavDisabled]="childNavDisabled"
+              [activeAccount]="activeAccount"
+              [ethBalance]="ethBalance"
+              [playerResources]="playerResources">
+  </e11-navbar>
+
+  <router-outlet></router-outlet>
+</ng-template>
