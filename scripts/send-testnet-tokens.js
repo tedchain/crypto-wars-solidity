@@ -1,4 +1,4 @@
-// Duplicate contributors.sample.json and modify the addresses and amount as you want.
+// Duplicate contributors.sample.json and modify the addresses and amount as you want
 const contributors = require('./contributors');
 const contracts = require('./contracts');
 
