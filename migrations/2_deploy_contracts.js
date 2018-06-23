@@ -82,7 +82,7 @@ module.exports = function(deployer) {
           assets[j].contractFunction(assets[j].initialAssets[i].id, assets[j].initialAssets[i].name, assets[j].initialAssets[i].stats);
         }
       }
-      // Initialize Requirements
+      // Initialize Requirements.
       for (var i = 0; i < assets[j].initialAssets.length; i++) {
         if (assets[j].initialAssets[i].requirements.length > 0) {
           assetsRequirements.setAssetRequirements(assets[j].initialAssets[i].id, assets[j].initialAssets[i].requirements);
